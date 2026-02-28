@@ -2,81 +2,116 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>For My Love ❤️</title>
+<title>Meri Kathal Love ❤️</title>
 
 <style>
-body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
-    font-family: Arial, sans-serif;
-    text-align: center;
-    overflow: hidden;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.container {
-    background: white;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-    width: 90%;
-    max-width: 400px;
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #fca3a6, #fad0c4);
+    color: rgb(156, 21, 21);
+    text-align:center;
+    scroll-behavior:smooth;
 }
 
-h1 {
-    font-size: 22px;
+section{
+    min-height:10vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding:30px;
 }
 
-button {
-    padding: 12px 25px;
-    margin: 15px;
-    font-size: 18px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+h1{
+    font-size:28px;
+    margin-bottom:15px;
 }
 
-#yes {
-    background-color: #ff4d6d;
-    color: white;
+p{
+    font-size:20px;
+    max-width:500px;
+    line-height:1.6;
+    margin:8px 0;
 }
 
-#no {
-    background-color: #444;
-    color: white;
-    position: absolute;
+/* Special Frame */
+.frame{
+    background: rgba(255,255,255,0.15);
+    padding:30px;
+    border-radius:25px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    margin-top:20px;
+    position:relative;
 }
 
-.message {
-    font-size: 20px;
-    margin-top: 20px;
-    color: #ff4d6d;
+button{
+    padding:14px 28px;
+    margin:15px;
+    font-size:18px;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
 }
 
-img {
-    width: 100%;
-    border-radius: 15px;
-    margin-top: 15px;
+#yes{
+    background:#ff4d6d;
+    color:white;
+}
+
+#no{
+    background:#333;
+    color:white;
+    position:absolute;
+}
+
+.message{
+    font-size:22px;
+    margin-top:20px;
+}
+
+img{
+    width:260px;
+    border-radius:20px;
+    margin-top:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.4);
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
-    <h1>Mere sath Date pe Taradevi chalegi my love? ❤️🌸</h1>
+<section>
+     <h1>Ek chhoti si baat Nilakshi ❤️</h1>
+    <p>Jab se tu meri life me aayi ha na,</p>
+    <p>sab kuch thoda sa special ho gaya hai ✨</p>
+    <p> han Main perfect nahi hoon… bhoot galtiya krta hu </p>
+    <p> tujhe gussa bhi dilata hu </p>
+    <p>par tere saath rehna chahta hoon hamesha  🥹</p>
+    <p> pata ni itne kam wakt mai kese par tu bhoot important ban gyi</p>
+    <p> I LOVE YOU NILAKSHI </p>
+</section>
 
-    <button id="yes">Yes 💕</button>
-    <button id="no">No 😜</button>
+<section>
+    <div class="frame">
+        <h1> I want to be your kathal love  🍈❤️</h1>
+        <p>Mere sath Date pe Taradevi chalegi my love? 🌸</p>
 
-    <div class="message" id="message"></div>
+        <button id="yes">Hanji 💖</button>
+        <button id="no">Nahi 😜</button>
 
-    <!-- ADD HER IMAGES HERE -->
-    <img src="Us.jpg.jpeg" alt="Her">
-</div>
+        <div class="message" id="message"></div>
+    </div>
+
+    <!-- Her Image at Last -->
+    <img src="Us.jpg.jpeg" alt="Her Image">
+</section>
 
 <script>
 const noBtn = document.getElementById("no");
@@ -84,14 +119,14 @@ const yesBtn = document.getElementById("yes");
 const message = document.getElementById("message");
 
 noBtn.addEventListener("click", function() {
-    const x = Math.random() * (window.innerWidth - 100);
-    const y = Math.random() * (window.innerHeight - 50);
+    const x = Math.random() * (window.innerWidth - 120);
+    const y = Math.random() * (window.innerHeight - 60);
     noBtn.style.left = x + "px";
     noBtn.style.top = y + "px";
 });
 
 yesBtn.addEventListener("click", function() {
-    message.innerHTML = "I love you sooo much Nilakshii ❤️🥹💖 Jaldi milenge 🌸✨";
+    message.innerHTML = "I love you sooo much Nilakshii ❤️🥹 Jaldi milenge 🌸✨";
 });
 </script>
 
